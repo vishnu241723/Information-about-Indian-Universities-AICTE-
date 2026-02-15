@@ -17,12 +17,12 @@ The system uses a custom-built `HashTable` class in JavaScript with **separate c
 
 ## 🔹 Key Features
 
-**✅ Insert Operation**
-**❌ Delete Operation**
-**🔍 Find Operation**
-**📋 Display Operation**
-**🔄 Dynamic UI Updates**
-**🔔 User Notifications**
+- **✅ Insert Operation**
+- **❌ Delete Operation**
+- **🔍 Find Operation**
+- **📋 Display Operation**
+- **🔄 Dynamic UI Updates**
+- **🔔 User Notifications**
 
 ---
 
