@@ -1,0 +1,17 @@
+// universities.json file
+fetch('universities.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(university => {
+            hashTable.insert(
+                university.key,
+                university.rank,
+                university.university_name,
+                university.location,
+                university.course_count,
+                university.courses
+            );
+        });
+        updateTable(hashTable.display());
+    })
+    .catch(error => console.error('Error loading data:', error));
