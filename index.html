@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>University Management System</h1>
+
+<div class="container">
+
+    <form id="operationForm">
+
+        <div class="half">
+            <label>Operation:</label>
+            <select id="operation" required>
+                <option value="INSERT">Insert</option>
+                <option value="DELETE">Delete</option>
+                <option value="DISPLAY">Display</option>
+                <option value="FIND">Find</option>
+            </select>
+        </div>
+
+        <div class="half">
+            <label>Key:</label>
+            <input type="number" id="key" required>
+        </div>
+
+        <div class="half">
+            <label>Rank:</label>
+            <input type="number" id="rank">
+        </div>
+
+        <div class="half">
+            <label>University Name:</label>
+            <input type="text" id="university_name">
+        </div>
+
+        <div class="half">
+            <label>Location:</label>
+            <input type="text" id="location">
+        </div>
+
+        <div class="half">
+            <label>Course Count:</label>
+            <input type="number" id="course_count">
+        </div>
+
+        <div class="full">
+            <label>Courses:</label>
+            <textarea id="courses" rows="3"></textarea>
+        </div>
+
+        <div class="full center">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+    <div id="result" class="notification"></div>
+
+    <table id="hashTable">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Rank</th>
+                <th>University Name</th>
+                <th>Location</th>
+                <th>Course Count</th>
+                <th>Courses</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</div>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
